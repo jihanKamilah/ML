@@ -38,10 +38,13 @@ For food classification, users can either upload or scan existing food images fr
 │   │       ├── soto-ayam-lamongan
 │   │       └── soto-banjar 
 │   └── Recommandation System
-│       ├── ***.csv (Dirty Dataset For RS Based on Input)
-│       ├── ***.csv (Clean Dataset For RS Based on Input)
-│       ├── recipe_dataset.csv (For RS For You)
-│       └── user_rating.csv (For RS For You)
+│       ├── Opsi_BasedonInput
+│       │   ├── preprocessed_dataset.csv (Clean Dataset For RS Based on Input)
+│       │   ├── Preprocessing_Dataset_BasedonInput.ipnyb (Code For Preprocessing Data)
+│       │   └── recipes_dataset.csv (Dirty Dataset For RS Based on Input)
+│       └── Opsi_ForYou
+│           ├── recipe_dataset.csv (For RS For You)
+│           └── user_rating.csv (For RS For You)
 └── Model
     ├── Image Classification
     │   └── FirstTF.ipnyb
