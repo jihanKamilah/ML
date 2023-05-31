@@ -68,5 +68,5 @@ The second type of recommendation system is based on user input. We tokenize the
 * [Tensorflow Keras](https://www.tensorflow.org) - The AI framework used
 
 ## Authors
-* **Jihan Kamilah**  - [jihanKamilah](https://github.com/jihanKamilah)
-* **Santiana**       - [santiana1922](https://github.com/Santiana1922)
+* **Jihan Kamilah (M304DSY2993)**  - [jihanKamilah](https://github.com/jihanKamilah)
+* **Santiana (M304DSY2487)**       - [santiana1922](https://github.com/Santiana1922)
