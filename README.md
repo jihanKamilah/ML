@@ -60,7 +60,17 @@ In the case of the recommendation system, the model calculates ratings and creat
 
 
 ## Built With
-* [Tensorflow Keras](https://www.tensorflow.org) - The AI framework used
+* [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.7.0-orange)](https://www.tensorflow.org/)
+
+* [![NumPy](https://img.shields.io/badge/NumPy-1.21.4-blue)](https://numpy.org/)
+
+* [![Pandas](https://img.shields.io/badge/Pandas-1.3.3-green)](https://pandas.pydata.org/)
+
+* [![Matplotlib](https://img.shields.io/badge/Matplotlib-3.4.3-red)](https://matplotlib.org/)
+
+* [![Seaborn](https://img.shields.io/badge/Seaborn-0.11.2-yellow)](https://seaborn.pydata.org/)
+
+* [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0.1-lightgrey)](https://scikit-learn.org/)
 
 ## Authors
 * **Jihan Kamilah (M304DSY2993)**  - [jihanKamilah](https://github.com/jihanKamilah)
