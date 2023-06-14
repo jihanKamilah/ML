@@ -9,50 +9,45 @@ For food classification, users can either upload or scan existing food images fr
 ```bash
 .
 ├── README.md
-├── datasets
-│   ├── Image Classification
-│   │   └── dataset-food-selected
-│   │       ├── asinan-jakarta
-│   │       ├── ayam-bumbu-rujak
-│   │       ├── ayam-goreng-lengkuas
-│   │       ├── bika-ambon
-│   │       ├── cendol
-│   │       ├── es-dawet
-│   │       ├── gado-gado
-│   │       ├── gulai-ikan-asin
-│   │       ├── kerak-telor
-│   │       ├── klapertart
-│   │       ├── kolak
-│   │       ├── kue-lumpur
-│   │       ├── kunyit-asam
-│   │       ├── laksa-bogor
-│   │       ├── lumpia-semarang
-│   │       ├── mie-aceh
-│   │       ├── nagasari
-│   │       ├── papeda
-│   │       ├── rendang
-│   │       ├── rujak-cingur
-│   │       ├── sate-ayam-madura
-│   │       ├── sate-meranggi
-│   │       ├── serabi
-│   │       ├── soto-ayam-lamongan
-│   │       └── soto-banjar 
-│   └── Recommandation System
-│       ├── Opsi_BasedonInput
-│       │   ├── preprocessed_dataset.csv (Clean Dataset For RS Based on Input)
-│       │   ├── Preprocessing_Dataset_BasedonInput.ipnyb (Code For Preprocessing Data)
-│       │   └── recipes_dataset.csv (Dirty Dataset For RS Based on Input)
-│       └── Opsi_ForYou
-│           ├── recipe_dataset.csv (For RS For You)
-│           └── user_rating.csv (For RS For You)
+├── Datasets
+│       ── Image Classification
+│       │       ├── asinan-jakarta
+│       │       ├── ayam-goreng-lengkuas
+│       │       ├── es-dawet
+│       │       ├── gado-gado
+│       │       ├── gulai-ikan-asin
+│       │       ├── kolak
+│       │       ├── lumpia-semarang
+│       │       ├── mie-aceh
+│       │       ├── rendang
+│       │       ├── rujak-cingur
+│       │       ├── sate-ayam-madura
+│       │       ├── sate-meranggi
+│       │       ├── serabi
+│       │       ├── soto-ayam-lamongan
+│       │       └── soto-banjar 
+│       └── Recommandation System
+│       │       ├── clean_recipe_v3.csv
+│       │       ├── Prdataset_user_rating_v4.csv
 └── Model
-    ├── Image Classification
-    │   └── FirstTF.ipnyb
-    └── Recommendation System
-        ├── RecommendationSystem_Opsi1_ForYou.ipnyb
-        ├── RecommendationSystem_Opsi2_ForYou.ipnyb
-        └── RecommendationSystem_Opsi3_BasedonInput.ipnyb
-```
+        ├── Image Classification
+        │       └── Assets
+        │       │       └── Accuracy history.png
+        │       │       └── Loss history.png
+        │       └── Converted file
+        │       │       └── model.pb
+        │       │       └── converted_model_food_classification_v1.tflite
+        │       │       └── model_food_classification_v1.h5
+        │       └── Food Classification_v1.ipynb
+        └── Recommendation System
+                └── Assets
+                │       └── Epochs history.png
+                └── Converted file
+                │       └── model.pb
+                │       └── converted_model_recommendation_for_you_v4.tflite
+                │       └── model_recommendation_for_you_v4.h5
+                └── recommendation for you v4.ipynb
+    ```
 
 ## Datasets
 We collected the datasets for both the recommendation system and food classification by scraping. For food classification, we scraped images from Google Images, resulting in a dataset with 25 food labels, each containing 50 images. 
