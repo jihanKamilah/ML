@@ -2,7 +2,7 @@
 
 BantuMasak is an application designed to assist users, particularly housewives, in creating a well-organized plan for the meals they want to prepare over several days. Our team has developed various features to simplify the process of meal planning. 
 On the machine learning side, we have built two types of models: a recommendation system and an image classification system. 
-Our recommendation system includes two types. First, it provides recipe recommendations by calculating ratings. Second, it suggests menus based on the user's input, specifically the ingredients they have on hand. 
+The recommendation system utilizes a model that calculates ratings and suggests suitable recipes for users.
 For food classification, users can either upload or scan existing food images from their phones. The application will then predict the name of the food and provide detailed information such as ingredients and complete recipes.
 
 ## Project Structure (ML)
@@ -47,17 +47,17 @@ For food classification, users can either upload or scan existing food images fr
                 │       └── converted_model_recommendation_for_you_v4.tflite
                 │       └── model_recommendation_for_you_v4.h5
                 └── recommendation for you v4.ipynb
-    ```
+```
 
 ## Datasets
-We collected the datasets for both the recommendation system and food classification by scraping. For food classification, we scraped images from Google Images, resulting in a dataset with 25 food labels, each containing 50 images. 
-On the other hand, for the recommendation system, we scraped data from the cookpad.com website. The dataset includes 800 different recipes, each with the food's title, ingredients, step-by-step instructions for making the dish, and the corresponding image URL.
+We collected the datasets for both the recommendation system and food classification by scraping. For food classification, we scraped images from Google Images, resulting in a dataset with 15 food labels, each containing 100 images. 
+On the other hand, for the recommendation system, we scraped data from the cookpad.com website. The dataset includes 864 different recipes, each with the food's id, title, ingredients, step-by-step instructions for making the dish, and the corresponding image URL.
 
 
 ## Network
-For the food classification model, we utilized transfer learning with the ResNet50 architecture. We also incorporated Convolutional Neural Networks (CNNs) into the model, specifically modified for the 25 food labels.
-In the case of the recommendation system, we developed two types. The first type, "Recommendation for You," involves calculating ratings and creating an embedding layer to provide suitable recipes for the user. 
-The second type of recommendation system is based on user input. We tokenize the ingredients and create an embedding layer to suggest appropriate recipes based on the available ingredients provided by the user.
+For the food classification model, we utilized transfer learning with the ResNet50 architecture. We also incorporated Convolutional Neural Networks (CNNs) into the model, specifically modified for the 15 food labels.
+In the case of the recommendation system, the model calculates ratings and creating an embedding layer to suggest suitable recipes for the user. 
+
 
 ## Built With
 * [Tensorflow Keras](https://www.tensorflow.org) - The AI framework used
