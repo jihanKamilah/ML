@@ -110,6 +110,17 @@ To deploy the model on the cloud and Android devices, we convert the model into 
 [![Seaborn](https://img.shields.io/badge/Seaborn-0.11.2-yellow)](https://seaborn.pydata.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0.1-lightgrey)](https://scikit-learn.org/)
 
+## How to Run Our Code/ Model
+1. Open the .ipynb file in `Model` folder, and select one you would like to run.
+2. Download the raw file via download button on the top right of code.
+3. Open file in your code editor (you can use Google Colab).
+4. Prepare dataset by downloading from the GitHub/drive link provided.
+5. Run the code one by one, and make predictions by setting inputs based on requirements for each feature.
+
+You can also predict the model results by downloading the .h5 model on GitHub in the Model folder. How to do it:
+1. Download the model of your choice.
+2. Load the `.h5` model, then run the predict output code.
+
 ## Authors (ML)
 |          Nama         | Bangkit-ID |       Path       |       Contact       |
 |:---------------------:|:----------:|:----------------:|:-------------------:|
