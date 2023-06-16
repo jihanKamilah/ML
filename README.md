@@ -96,18 +96,19 @@ The final performance of the model after iterating with 22 epochs is as follows:
 - `precision: 0.9863` 
 - `recall: 0.9567` 
 
+## Deployment
+To deploy the model on the cloud and Android devices, we convert the model into three types of extensions:
+1. `.h5`
+2. `.tflite`
+3. `.pb`
+
 ## Built With
-* [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.7.0-orange)](https://www.tensorflow.org/)
-
-* [![NumPy](https://img.shields.io/badge/NumPy-1.21.4-blue)](https://numpy.org/)
-
-* [![Pandas](https://img.shields.io/badge/Pandas-1.3.3-green)](https://pandas.pydata.org/)
-
-* [![Matplotlib](https://img.shields.io/badge/Matplotlib-3.4.3-red)](https://matplotlib.org/)
-
-* [![Seaborn](https://img.shields.io/badge/Seaborn-0.11.2-yellow)](https://seaborn.pydata.org/)
-
-* [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0.1-lightgrey)](https://scikit-learn.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.7.0-orange)](https://www.tensorflow.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-1.21.4-blue)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-1.3.3-green)](https://pandas.pydata.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.4.3-red)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-0.11.2-yellow)](https://seaborn.pydata.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0.1-lightgrey)](https://scikit-learn.org/)
 
 ## Authors (ML)
 |          Nama         | Bangkit-ID |       Path       |       Contact       |
