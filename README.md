@@ -78,6 +78,23 @@ The final performance of the model is as follows:
 - `Mean Squared Error: 0.2711`
 - `Mean Absolute Error: 0.3278`
 
+## Food Classification
+This model is a computer vision task that involves assigning a label or category to an input image. The goal of this model is to accurately recognize and classify different objects or patterns within the images based on their visual features. The model is trained on a labeled dataset, where each image is associated with a specific class or category. This model ease users to get to know the unfamiliar dish just by uploading the corresponding food images.
+
+#### Model Architecture
+In this model, we perform transfer learning using `Restnet50`. We instantiate the ResNet50 model with pre-trained weights from the `ImageNet` dataset. We are not included the top (fully connected) layers of the ResNet50 model. We freeze all the layers in the ResNet50 model, allowing us to use the ResNet50 model as a feature extractor without modifying its original weights. After that, we create two another layers as followings:
+1. `GlobalAveragePooling2D` : This layer computes the average value of each feature map, reducing the spatial dimensions and preserving the channel information.
+2. `Dense layer` : We create this layer with 15 neurons and add softmax activation. The softmax activation produces a probability distribution over the 15 classes, representing the model's predicted probabilities for each class.
+
+#### Model Training
+We fit the model using the previously built architecture. We train the `train_generator` by utilized data generator, which generates batches of training data on the fly. We also add parameter `validation_data=val_generator`. This parameter specifies the validation data generator, which generates batches of validation data. In this phase, We perform `callbacks` to do early stopping when the validation set reachs the desirable accuracy.
+
+#### Model Performance
+The final performance of the model after iterating with 22 epochs is as follows:
+- `loss: 0.1338`
+- `accuracy: 0.9750` 
+- `precision: 0.9863` 
+- `recall: 0.9567` 
 
 ## Built With
 * [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.7.0-orange)](https://www.tensorflow.org/)
