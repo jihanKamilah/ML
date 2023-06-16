@@ -54,10 +54,29 @@ We collected the datasets for both the recommendation system and food classifica
 
 On the other hand, for the recommendation system, we scraped data from the cookpad.com website. The dataset includes 864 different recipes, each with the food's id, title, ingredients, step-by-step instructions for making the dish, and the corresponding image URL. Another file used is dataset_user_rating, which consists of user id, menu id, menu name, and rating. For the user rating itself, we generate dummy data using python, where the rating range is from 0 to 5.
 
-
 ## Network
 For the food classification model, we utilized transfer learning with the ResNet50 architecture. We also incorporated Convolutional Neural Networks (CNNs) into the model, specifically modified for the 15 food labels.
 In the case of the recommendation system, the model calculates ratings and creating an embedding layer to suggest suitable recipes for the user. 
+
+## Recommendation System
+Our recommendation system model is typically categorized as `Collaborative Filtering`, which is a technique that makes recommendations based on the preferences and behavior of similar users. In this approach, the system identifies users who have similar tastes and preferences and recommends items based on the ratings of those similar users.
+
+#### Model Architecture
+In this model, we utilize several types of layers as follows:
+1. `InputLayer` : This layer serves as the entry point for the input data, defining the shape and type of the expected input data. It consists of two inputs: Recipe-Input and User-Input.
+2. `Embedding` : This layer transforms categorical variables into low-dimensional numerical vectors. We create two embedding layers for Recipe-Embedding and User-Embedding.
+3. `Flatten` : These layers convert the multidimensional input data into one-dimensional vectors. We create two Flatten layers, Flatten-Recipe and Flatten-Users.
+4. `Concatenate` : This layer concatenates multiple input tensors along a specific axis.
+5. `Dense` : These layers learn complex patterns and relationships by connecting neurons between layers. We create four Dense layers with 256, 128, 128, and 1 neurons, respectively. The last Dense layer serves as the output layer.
+
+#### Model Training
+We fit the model using the previously built architecture, where the input data consists of two inputs: `train.User_id` and `train.Id_Nama`. The target variable, `train.Rating`, represents the expected output corresponding to the input data. The model is trained for 700 epochs.
+
+#### Model Performance
+The final performance of the model is as follows:
+- `Loss: 0.3278`
+- `Mean Squared Error: 0.2711`
+- `Mean Absolute Error: 0.3278`
 
 
 ## Built With
