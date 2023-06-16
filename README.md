@@ -10,7 +10,7 @@ For food classification, users can either upload or scan existing food images fr
 .
 ├── README.md
 ├── Datasets
-│       ── Image Classification
+│       ├── Image Classification
 │       │       ├── asinan-jakarta
 │       │       ├── ayam-goreng-lengkuas
 │       │       ├── es-dawet
@@ -27,31 +27,32 @@ For food classification, users can either upload or scan existing food images fr
 │       │       ├── soto-ayam-lamongan
 │       │       └── soto-banjar 
 │       └── Recommandation System
-│       │       ├── clean_recipe_v3.csv
-│       │       ├── Prdataset_user_rating_v4.csv
+│               ├── clean_recipe_v3.csv
+│               └── dataset_user_rating_v4.csv
 └── Model
         ├── Image Classification
-        │       └── Assets
-        │       │       └── Accuracy history.png
+        │       ├── Assets
+        │       │       ├── Accuracy history.png
         │       │       └── Loss history.png
-        │       └── Converted file
-        │       │       └── model.pb
-        │       │       └── converted_model_food_classification_v1.tflite
+        │       ├── Converted file
+        │       │       ├── model.pb
+        │       │       ├── converted_model_food_classification_v1.tflite
         │       │       └── model_food_classification_v1.h5
         │       └── Food Classification_v1.ipynb
         └── Recommendation System
-                └── Assets
+                ├── Assets
                 │       └── Epochs history.png
-                └── Converted file
-                │       └── model.pb
-                │       └── converted_model_recommendation_for_you_v4.tflite
+                ├── Converted file
+                │       ├── model.pb
+                │       ├── converted_model_recommendation_for_you_v4.tflite
                 │       └── model_recommendation_for_you_v4.h5
                 └── recommendation for you v4.ipynb
 ```
 
 ## Datasets
 We collected the datasets for both the recommendation system and food classification by scraping. For food classification, we scraped images from Google Images, resulting in a dataset with 15 food labels, each containing 100 images. 
-On the other hand, for the recommendation system, we scraped data from the cookpad.com website. The dataset includes 864 different recipes, each with the food's id, title, ingredients, step-by-step instructions for making the dish, and the corresponding image URL.
+
+On the other hand, for the recommendation system, we scraped data from the cookpad.com website. The dataset includes 864 different recipes, each with the food's id, title, ingredients, step-by-step instructions for making the dish, and the corresponding image URL. Another file used is dataset_user_rating, which consists of user id, menu id, menu name, and rating. For the user rating itself, we generate dummy data using python, where the rating range is from 0 to 5.
 
 
 ## Network
@@ -72,6 +73,8 @@ In the case of the recommendation system, the model calculates ratings and creat
 
 * [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0.1-lightgrey)](https://scikit-learn.org/)
 
-## Authors
-* **Jihan Kamilah (M304DSY2993)**  - [jihanKamilah](https://github.com/jihanKamilah)
-* **Santiana (M304DSY2487)**       - [santiana1922](https://github.com/Santiana1922)
+## Authors (ML)
+|          Nama         | Bangkit-ID |       Path       |       Contact       |
+|:---------------------:|:----------:|:----------------:|:-------------------:|
+|  [Jihan Kamilah](https://github.com/jihanKamilah)  |  M304DSY2993  | Machine Learning | <a href="https://www.linkedin.com/in/jihan-kamilah/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> |
+|  [Santiana](https://github.com/Santiana1922)  |  M304DSY2487  | Machine Learning | <a href="https://www.linkedin.com/in/santiana/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> |
